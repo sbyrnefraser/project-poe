@@ -46,9 +46,7 @@ html {
 
 body {
   margin: 0;
-  min-height: 2000px;
-  padding-top: 50px;
-  
+
 }
 
 a {
@@ -308,7 +306,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #428bca;
 }
 
 input,
@@ -780,16 +778,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
-}
-
-.container-noneimage {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #ffffff;
-
 }
 
 .container:before,
@@ -815,6 +803,7 @@ pre code {
 .row {
   margin-right: -15px;
   margin-left: -15px;
+  color: #ffffff;
 }
 
 .row:before,
@@ -2547,6 +2536,7 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
+  text-shadow: 2px 2px #052a6e;
 }
 
 .btn-sm,
@@ -5186,28 +5176,36 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  height:500px;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
+  margin-top: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
-  background: url('../assets/backing1.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-color: #ffcf00;  /*!yellow */
+  height: 550px;
+  text-align: center;
+  background-image:url('../../dist/assets/backing1.jpg');
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .jumbotron h1 {
   line-height: 1;
   color: inherit;
+  color:#ffffff;
+  text-shadow: 2px 2px #1c1c1c;
 }
 
 .jumbotron p {
   line-height: 1.4;
+  color:#ffffff;
+  text-shadow: 2px 2px #1c1c1c;
+
 }
 
 .container .jumbotron {
@@ -6517,10 +6515,6 @@ button.close {
   background-color: #ffffff;
 }
 
-.navbar-static-top {
-  margin-bottom: 19px;
-}
-
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -6536,12 +6530,6 @@ button.close {
 
 .carousel-caption .btn {
   text-shadow: none;
-}
-
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -6616,6 +6604,16 @@ button.close {
 
 .affix {
   position: fixed;
+}
+
+.spacer1 {
+  height:400px;
+  background-image:url('../../dist/assets/backing1.jpg');
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ffffff;
 }
 
 @-ms-viewport {

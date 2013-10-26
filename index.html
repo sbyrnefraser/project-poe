@@ -4,16 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product of Experience User Experience and product development.">
+    <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Product of Experience</title>
+    <title>Product of Experience - User Experience Consultants</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+   <!--  <link href="sticky-footer.css" rel="stylesheet"> -->
 
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,8 +28,7 @@
   </head>
 
   <body>
-
-    <!-- Fixed navbar -->
+   <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -40,48 +43,85 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>        
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Design stratergy</a></li>
+                <li><a href="#">Design stratergy</a></li>
+                <li><a href="#">INteraction design</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://twitter.com/SByrneFraser">@SByrneFraser</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
+        
+<!--Remove if uneeded -->
+   <!--  <div class="spacer1">
+    </div>-->
 
-    <div class="container">
-
-      <div class="starter-template">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <<div class="jumbotron">
+      <div class="container">
         <h1>Product of Experience</h1>
-        <p class="lead">UX consultants<br> All you get more people to enjoy your products.</p>
+        <p>A User Experience and Design Agency</p>
+        <p><a class="btn btn-primary btn-lg" role="button" href="http://www.w3schools.com">Talk to us &raquo;</a></p>
       </div>
+    </div> 
 
-    </div><!-- /.container -->
+    
+<div class="container">
 
-<<!-- Example row of columns -->
+      <!-- Example row of columns -->
       <div class="row">
+
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>What we do</h2>
+          <p>We help clients make digital products that meet real people needs. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h2>Longer line of text</h2>
+          <p>We help clients make digital products that meet real people needs.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <h2>Longer line of text</h2>
+          <p>Replace this with a nice social logo</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
- 
+      <hr>
+
+    
+
+
+    </div> <!-- /container -->
+
+  
+
+    <div id="footer">
+      <div class="container">
+        <p>&copy Product of Experience</p>
+      </div>
+    </div>
+   
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+
   </body>
 </html>
