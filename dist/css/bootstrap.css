@@ -46,6 +46,9 @@ html {
 
 body {
   margin: 0;
+  min-height: 2000px;
+  padding-top: 50px;
+  
 }
 
 a {
@@ -777,6 +780,16 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+}
+
+.container-noneimage {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+
 }
 
 .container:before,
@@ -5173,6 +5186,7 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
+  height:500px;
   padding: 30px;
   margin-bottom: 30px;
   font-size: 21px;
@@ -5180,6 +5194,11 @@ a.list-group-item.active > .badge,
   line-height: 2.1428571435;
   color: inherit;
   background-color: #eeeeee;
+  background: url('../assets/backing1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .jumbotron h1 {
@@ -6498,6 +6517,10 @@ button.close {
   background-color: #ffffff;
 }
 
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -6513,6 +6536,12 @@ button.close {
 
 .carousel-caption .btn {
   text-shadow: none;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+
 }
 
 @media screen and (min-width: 768px) {
