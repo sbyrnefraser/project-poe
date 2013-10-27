@@ -1249,6 +1249,8 @@ pre code {
   }
 }
 
+
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -5177,7 +5179,6 @@ a.list-group-item.active > .badge,
 
 .jumbotron {
   padding: 30px;
-  margin-bottom: 8px;
   margin-top: 30px;
   font-size: 21px;
   font-weight: 200;
@@ -5186,8 +5187,8 @@ a.list-group-item.active > .badge,
   background-color: #ffcf00;  /*!yellow */
   height: 550px;
   text-align: center;
-  background-image:url('../../dist/assets/backing1.jpg');
-   -webkit-background-size: cover;
+  background-image:url('../../dist/assets/MonkeyJump.gif');
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -5225,6 +5226,78 @@ a.list-group-item.active > .badge,
     font-size: 63px;
   }
 }
+
+
+.jumbotron-image2
+{
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #ffcf00;  /*!yellow */
+  height: 550px;
+  text-align: center;
+background-image:url('../../dist/assets/backing1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.jumbotron-image3
+
+{
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #ffcf00;  /*!yellow */
+  height: 550px;
+  text-align: center;
+background-image:url('../../dist/assets/backing1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.bigblock {
+  padding: 0px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  font-size: 21px;
+  font-weight: lighter;
+  letter-spacing:0.08em;
+  line-height: 1.7;
+  color: #efefef;
+  background-color: #428bca;  /*!yellow #ffcf00 */
+  /*!height: 550px;*/
+  text-align: left;
+  background-image:url('');
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+@media screen and (max-width: 768px) {
+.bigblock {
+font-size: 15px;
+  }
+}
+
+
+.bigblock h1 {
+font-weight: normal;
+}
+
+
 
 .thumbnail {
   display: inline-block;
