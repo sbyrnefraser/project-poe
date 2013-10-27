@@ -303,7 +303,8 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: lighter;
   line-height: 1.428571429;
   color: #333333;
   background-color: #428bca;
@@ -804,6 +805,81 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
   color: #ffffff;
+}
+
+.row p{
+  font-weight: lighter;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.row a{
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 768px) {
+.row p{
+  font-size: 14px;
+}
+.row h3{
+  font-size: 14px;
+}
+}
+
+.e-mail-icon
+{ background-image:url('../../dist/assets/email.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+height: 260px;
+width: 260px;
+}
+
+@media screen and (min-width: 1200px) {
+.e-mail-icon
+{ background-image:url('../../dist/assets/email.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+height: 360px;
+width: 360px;
+}
+}
+
+.twitter-icon
+{ background-image:url('../../dist/assets/twitter.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+height: 260px;
+width: 260px;
+}
+
+@media screen and (min-width: 1200px) {
+.twitter-icon
+{ background-image:url('../../dist/assets/twitter.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+height: 360px;
+width: 360px;
+}
+}
+
+.phone-icon
+{ background-image:url('../../dist/assets/comment.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+height: 260px;
+width: 260px;
+}
+
+@media screen and (min-width: 1200px) {
+.phone-icon
+{ background-image:url('../../dist/assets/comment.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+height: 360px;
+width: 360px;
+}
 }
 
 .row:before,
@@ -4444,6 +4520,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  font-weight: normal;
 }
 
 .navbar-brand:hover,
@@ -5197,11 +5274,15 @@ a.list-group-item.active > .badge,
 
 .jumbotron h1 {
   line-height: 1;
+  font-weight: normal;
   color: inherit;
   color:#ffffff;
   text-shadow: 2px 2px #1c1c1c;
 }
 
+.fine {
+font-weight: lighter;
+}
 .jumbotron p {
   line-height: 1.4;
   color:#ffffff;
@@ -5231,7 +5312,6 @@ a.list-group-item.active > .badge,
 .jumbotron-image2
 {
   padding: 30px;
-  margin-top: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
@@ -5251,7 +5331,6 @@ background-image:url('../../dist/assets/backing1.jpg');
 
 {
   padding: 30px;
-  margin-top: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
@@ -5268,9 +5347,9 @@ background-image:url('../../dist/assets/backing1.jpg');
 }
 
 .bigblock {
-  padding: 0px;
-  margin-bottom: 8px;
-  margin-top: 0px;
+  padding: 50px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   font-size: 21px;
   font-weight: lighter;
   letter-spacing:0.08em;
@@ -5286,8 +5365,32 @@ background-image:url('../../dist/assets/backing1.jpg');
   background-size: cover;
 
 }
+
+.bigblock2 {
+  padding: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 21px;
+  font-weight: lighter;
+  letter-spacing:0.08em;
+  line-height: 1.7;
+  color: #111111;
+  background-color: #f0ede4;  /*!yellow #ffcf00 */
+  /*!height: 550px;*/
+  text-align: left;
+  background-image:url('');
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
 @media screen and (max-width: 768px) {
 .bigblock {
+font-size: 15px;
+  }
+  .bigblock2 {
 font-size: 15px;
   }
 }

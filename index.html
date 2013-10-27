@@ -13,10 +13,6 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-   <!--  <link href="sticky-footer.css" rel="stylesheet"> -->
-
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -37,24 +33,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Product of Experience</a>
+          <a class="navbar-brand" href="index.html">Product <span class='fine'>of</span> Experience</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Design stratergy</a></li>
-                <li><a href="#">Design stratergy</a></li>
-                <li><a href="#">INteraction design</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="#services">Services</a></li>
+            
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#contact">Contact</a></li>
@@ -66,19 +52,21 @@
 <!--Remove if uneeded -->
    <!--  <div class="spacer1">
     </div>-->
-
+<a id='home'></a>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Product of Experience</h1>
+        <h1>Product <span class='fine'>of</span> Experience</h1>
         <p>A User Experience and Design Agency</p>
-        <p><a class="btn btn-primary btn-lg" role="button" href="http://www.w3schools.com">Talk to us &raquo;</a></p>
+        <p><a class="btn btn-primary btn-lg" role="button" href="#contact">Talk to us &raquo;</a></p>
       </div>
     </div> 
 
-
+<a id='about'></a>
      <div class="bigblock">
+
       <div class="container">
+         
         <h1>Product of Experience</h1>
         <p>A Millions of people across Europe, the Middle East and Mexico will get an extra hour in bed this weekend as daylight saving time comes to an end. However, Brazil, Chile, Australia, New Zealand lost an hour earlier this month when their clocks went forward. Opinion remains divided about the economic benefits or otherwise of the change, as the BBC's international correspondents explain.
         </p>
@@ -94,10 +82,10 @@
       </div>
     </div> 
 
-
-<div class="bigblock">
+<a id='services'></a>
+<div class="bigblock2">
  <div class="container">
-        <h1>Product of Experience</h1>
+        <h1>Services</h1>
         <p>A Millions of people across Europe, the Middle East and Mexico will get an extra hour in bed this weekend as daylight saving time comes to an end. However, Brazil, Chile, Australia, New Zealand lost an hour earlier this month when their clocks went forward. Opinion remains divided about the economic benefits or otherwise of the change, as the BBC's international correspondents explain.
         </p>
 
@@ -112,35 +100,35 @@
       </div>
     </div> 
 
-    
+    <a id='contact'></a>
 <div class="container">
 
       <!-- Footer 3 colum link out module -->
       <div class="row">
-
+<h2 class='container'>Talk to Us</h2>
         <div class="col-md-4">
-          <h2>What we do</h2>
+          <h3><a href='http:www.twitter.com/sbyrnefraser'>E-mail</a></h3>
+           <div class='e-mail-icon'></div>
           <p>We help clients make digital products that meet real people needs. </p>
          
         </div>
         <div class="col-md-4">
-          <h2>Longer line of text</h2>
+          <h3><a href='http:www.twitter.com/sbyrnefraser'>Twitter</a></h3>
+          <div class='twitter-icon'></div>
           <p>We help clients make digital products that meet real people needs.</p>
           
        </div>
         <div class="col-md-4">
-          <h2>Longer line of text</h2>
+          <h3><a href='http:www.twitter.com/sbyrnefraser'>Phone</a></h3>
+          <div class='phone-icon'></div>
           <p>Replace this with a nice social logo</p>
          
         </div>
       </div>
 
-      <hr>
+      <hr></hr>
 
-    
-
-
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
   
 
@@ -157,6 +145,24 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+
+    <script>
+ 
+       $(document).ready(function(){
+         $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+            $target = $(target);
+
+            $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+           }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+});
+       </script>
 
 
   </body>
