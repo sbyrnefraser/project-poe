@@ -38,8 +38,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li class=""><a href="#about">About</a></li>
+            <li class=""><a href="#services">Services</a></li>
             
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -57,7 +57,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Product <span class='fine'>of</span> Experience</h1>
-        <p>A User Experience and Design Agency</p>
+        <p>A digital user experience and design agency. Specialising in creating great products which meet real user needs.</p>
         <p><a class="btn btn-primary btn-lg" role="button" href="#contact">Talk to us &raquo;</a></p>
       </div>
     </div> 
@@ -162,8 +162,15 @@
       });
   });
 });
-       </script>
+       </script> 
 
+<script>
+$(document).ready(function(){
+  $('a[href^="#contact"]').on('click',function (e) {
+            e.preventDefault();
+
+  $( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
+</script>
 
   </body>
 </html>
